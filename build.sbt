@@ -8,6 +8,7 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "DateGapsFinder",
+    libraryDependencies += datetime % Test,
     libraryDependencies += scalaTest % Test
   )
 
