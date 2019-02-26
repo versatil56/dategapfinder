@@ -86,8 +86,9 @@ class DateGapFinderspec extends FlatSpec with Matchers {
 
           FillGaps(missingDates :+ expectedNextDate, expectedNextDate, nextAvailableDate)
         }
-        else
+        else {
           missingDates
+        }
       })
     }
 
